@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import { Home } from "./modules/home/index";
 import { GalleryModule } from "./modules/gallery";
 import { News } from "./modules/news/index";
+import { ClinicPartners } from "./modules/clinicPartner/index";
 
 export const Routes = () => {
   return (
@@ -10,6 +11,7 @@ export const Routes = () => {
       <Route path="/" component={Home} exact />
       <Route path="/gallery" component={GalleryModule} exact />
       <Route path="/news" component={News} exact />
+      <Route path="/partners" component={ClinicPartners} exact />
     </Switch>
   );
 };

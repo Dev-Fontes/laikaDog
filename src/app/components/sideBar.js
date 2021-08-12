@@ -39,8 +39,10 @@ export const SideBar = () => {
               Inicio
             </S.MenuItemCustom>
             <S.SubMenuCustom icon={<MenuRounded />} title="Menu">
-              <S.MenuItemCustom>Clínicas parceiras</S.MenuItemCustom>
-              <S.MenuItemCustom>Seja Premium</S.MenuItemCustom>
+              <S.MenuItemCustom>
+                <Link to="/partners" /> Clínicas parceiras
+              </S.MenuItemCustom>
+              <S.MenuItemCustom>Falar mal da Luisa Mel</S.MenuItemCustom>
             </S.SubMenuCustom>
             <S.MenuItemCustom icon={<Announcement />}>
               <Link to="/news" />
