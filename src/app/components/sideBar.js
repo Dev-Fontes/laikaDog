@@ -10,24 +10,31 @@ import {
   Storefront,
   Announcement,
   MenuRounded,
+  Home,
 } from "@material-ui/icons/";
 import ImgUm from "../../assets/SideBarImages/bgUm.jpg";
 import { Link } from "react-router-dom";
 
 export const SideBar = () => {
   const [collapse, setCollapse] = useState(false);
+  const [title, setTitle] = useState("laikaDog");
 
   function HandleCollapse() {
     setCollapse(!collapse);
+    if (title === "laikaDog") {
+      setTitle(<Pets fontSize="large" />);
+    } else {
+      setTitle("laikaDog");
+    }
   }
 
   return (
     <>
       <S.ProSideBarCustom collapsed={collapse} image={ImgUm}>
-        <S.SideBarHeaderCustom>laikaDog</S.SideBarHeaderCustom>
+        <S.SideBarHeaderCustom>{title}</S.SideBarHeaderCustom>
         <SidebarContent>
-          <Menu iconShape="circle">
-            <S.MenuItemCustom icon={<Pets />}>
+          <Menu iconShape="round">
+            <S.MenuItemCustom icon={<Home />}>
               <Link to="/" />
               Inicio
             </S.MenuItemCustom>
@@ -36,6 +43,7 @@ export const SideBar = () => {
               <S.MenuItemCustom>Seja Premium</S.MenuItemCustom>
             </S.SubMenuCustom>
             <S.MenuItemCustom icon={<Announcement />}>
+              <Link to="/news" />
               Notícias
             </S.MenuItemCustom>
             <S.MenuItemCustom icon={<Assignment />}>Adote</S.MenuItemCustom>

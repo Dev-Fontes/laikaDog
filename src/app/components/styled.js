@@ -17,6 +17,7 @@ export const ProSideBarCustom = styled(ProSidebar)`
 
 export const SideBarHeaderCustom = styled(SidebarHeader)`
   padding: 16px;
+  margin: auto;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
