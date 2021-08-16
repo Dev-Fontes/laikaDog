@@ -42,7 +42,7 @@ export const SideBar = () => {
               <S.MenuItemCustom>
                 <Link to="/partners" /> Clínicas parceiras
               </S.MenuItemCustom>
-              <S.MenuItemCustom>Falar mal da Luisa Mel</S.MenuItemCustom>
+              <S.MenuItemCustom ><Link to="/counter" />Contador</S.MenuItemCustom>
             </S.SubMenuCustom>
             <S.MenuItemCustom icon={<Announcement />}>
               <Link to="/news" />

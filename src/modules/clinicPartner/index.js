@@ -1,20 +1,13 @@
 import React from "react";
-import { ListClinicas } from "../../data/listClinicas";
+import { DataTable } from "./components/tablePartners";
+import * as S from "./components/styled";
 
 export const ClinicPartners = () => {
-  const lc = ListClinicas.map(clinica =>{
-    return <li key={clinica.id}>
-      {clinica.id} - {clinica.nome} - {clinica.especializacao} - {clinica.endereco} - {clinica.cidade}
-    </li>
-  });
-  
   return (
     <>
-      <div>
-        <ul>
-          {lc}
-        </ul>
-      </div>
+      <S.ClinicPartnersCustom>
+        <DataTable />
+      </S.ClinicPartnersCustom>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { CardActionArea, CardContent, CardMedia } from "@material-ui/core/";
+import { CardActionArea, CardMedia } from "@material-ui/core/";
 import IMG from "../assets/GalleryImages/dogFamily.jpg";
 import * as S from "./styled";
 

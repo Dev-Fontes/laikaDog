@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import ImgUm from "../../../assets/homeImages/banner_um.jpg";
@@ -19,13 +19,13 @@ export const Banner = () => {
         width={700}
       >
         <div>
-          <img src={ImgUm} />
+          <img alt="Doggo" src={ImgUm} />
         </div>
         <div>
-          <img src={ImgDois} />
+          <img alt="Doggo" src={ImgDois} />
         </div>
         <div>
-          <img src={ImgTres} />
+          <img alt="Doggo" src={ImgTres} />
         </div>
       </Carousel>
     </CarouselCustom>
