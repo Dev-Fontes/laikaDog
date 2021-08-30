@@ -6,9 +6,12 @@ export const Counter = () => {
   const [dados, setDados] = useState([]);
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
-      setDados(res.data);
-    });
+    (async () => {
+      const response = await axios.get(
+        "https://jsonplaceholder.typicode.com/users"
+      );
+      setDados(response.data);
+    })();
   }, []);
 
   return (
@@ -19,3 +22,4 @@ export const Counter = () => {
     </S.CounterCustom>
   );
 };
+

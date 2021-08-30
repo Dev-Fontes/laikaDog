@@ -8,7 +8,7 @@ export const ClinicPartnersCustom = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   overflow-y: scroll;
 `;
 
@@ -20,6 +20,11 @@ export const TableCustom = styled(Table)`
 `;
 
 export const TableContainerCustom = styled(TableContainer)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
-  height: 80%;
+  margin-top: 4%;
+  margin-inline: auto;
+  max-width: 80%;
 `;
